@@ -17,7 +17,7 @@ const LogIn = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
   let errorElement;
-  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth, {sendEmailVerification: true});
+  const [sendPasswordResetEmail, sending]= useSendPasswordResetEmail(auth, {sendEmailVerification: true});
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
@@ -45,11 +45,12 @@ const LogIn = () => {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
   const resetPassword = async () => {
-      
-    if (email) {
+      if ({email}) {
       await sendPasswordResetEmail(email);
       toast("Sent email");
-    } else {
+    } 
+    else {
+        console.log({email})
       toast("please enter your email");
     }
   };
