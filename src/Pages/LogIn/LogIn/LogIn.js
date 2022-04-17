@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Button, Form, Toast, ToastContainer } from "react-bootstrap";
+import { Button, Form} from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
@@ -43,11 +45,12 @@ const LogIn = () => {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
   const resetPassword = async () => {
+      
     if (email) {
       await sendPasswordResetEmail(email);
-      Toast("Sent email");
+      toast("Sent email");
     } else {
-      Toast("please enter your email address");
+      toast("please enter your email");
     }
   };
 
@@ -85,7 +88,7 @@ const LogIn = () => {
 
           <p>
             New to Workout with arif?{" "}
-            <Link to="/registration">please register</Link>{" "}
+            <Link to="/registration" className="text-decoration-none">please register</Link>{" "}
           </p>
 
           <Button variant="primary" type="submit">

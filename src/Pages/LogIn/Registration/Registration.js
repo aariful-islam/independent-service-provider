@@ -8,6 +8,7 @@ const Registration = () => {
   const [agree, setAgree] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
 
   const navigate = useNavigate();
   const [createUserWithEmailAndPassword, loading, error] =
