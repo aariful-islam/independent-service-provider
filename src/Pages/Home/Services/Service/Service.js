@@ -1,29 +1,24 @@
-import React from "react";
-import { Button, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './service.css'
 
-const Service = ({ service }) => {
-  const { name, img, price, description } = service;
-  return (
-    <Card  className="m-5 container shadow-lg p-3 mb-5 bg-white rounded">
-      <Card.Img variant="top" src={img} />
-      <Card.Body>
-        <Card.Title>
-          <h2>{name} </h2>
-        </Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Card.Text>
-          <h3>Price {price}</h3>
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer>
-        <Button>
-          Checkout
-          <Link to="/checkout" className="w-100"></Link>
-        </Button>
-      </Card.Footer>
-    </Card>
-  );
+const Service = ({service}) => {
+    const {name,img,description,price}=service
+    const navigate = useNavigate();
+
+    const navigateToServiceDetail = () =>{
+        navigate('/checkout');
+    }
+    return (
+        <div className='service container shadow-lg p-3 mb-5 bg-white rounded'>
+            <img className='w-100' src={img} alt="" />
+            <h2>{name}</h2>
+            <p>Price: {price}</p>
+            <p><small>{description}</small></p>
+            <button onClick={navigateToServiceDetail} className='btn btn-primary'>Book For {name}</button>
+            
+        </div>
+    );
 };
 
 export default Service;

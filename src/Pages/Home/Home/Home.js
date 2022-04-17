@@ -1,8 +1,11 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+
 import "./Home.css";
 import banner from '../../../images/banner.jpg'
-import Services from "../Services/Services";
+import Services from "../Services/Services/Services";
+
+
+
 
 const Home = () => {
   return (
@@ -27,7 +30,9 @@ const Home = () => {
         </div>
 
     </div>
-        <Services></Services>
+    <Services></Services>
+   
+        
     </div>
    
     
