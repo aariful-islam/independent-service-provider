@@ -15,7 +15,7 @@ const LogIn = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
   let errorElement;
-  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth, {sendEmailVerification: true});
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
