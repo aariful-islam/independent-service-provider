@@ -40,11 +40,11 @@ const Registration = () => {
   return (
     <div
       style={{ border: "1px solid black", height: "650px" }}
-      className="bg-primary w-75 mx-auto mt-5 d-flex align-items-center"
+      className="bg-primary w-50 mx-auto mt-5 d-flex align-items-center"
     >
       <Form
         onSubmit={handleFormSubmit}
-        className="w-50 mx-auto bg-white p-4 mt-5 mb-3"
+        className="w-50 mx-auto bg-white p-4 mt-5 mb-3 shadow-lg p-3 mb-5 bg-white rounded"
         style={{ borderRadius: "10px" }}
       >
         <Form.Group className="mb-3" controlId="formBasicText">
@@ -89,7 +89,7 @@ const Registration = () => {
           id="terms"
         />
         <label className={`ps-2 ${agree ? "" : "text-danger"}`} htmlFor="terms">
-          AcceptTerms and Conditions
+          Accept Terms and Conditions
         </label> <br />
         <input
           disabled={!agree}
