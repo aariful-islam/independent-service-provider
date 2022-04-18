@@ -3,21 +3,21 @@
         "id": 1,
         "name": "WEIGHT LOSS",
         "price": "$500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "I will help you to loss your weight. First of all I will provide you a diet chart according to your body structure. I will also provide you a proper exercise plan ",
         "img": "images/weightLoss.jpg"
     },
     {
         "id": 2,
         "name": "FIT AND HEALTHY",
         "price": "$450",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "For keeping our body feet and healthy we must have to do exercise regularly. We also have to maintain a proper diet plan. I will help you to keep your body feet and healthy.",
         "img": "images/fit.jpg"
     },
     {
         "id": 3,
         "name": "BODY BUILDING",
         "price": "$700",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "As I'm a professional gym trainer,I'm working with body building. I will help to you for body building. I will provide a diet chart without any kinds of medicine or protein shekhs. I will provide you proper exercise plan.",
         "img": "images/bodyBuild.jpg"
     }
    
