@@ -35,6 +35,9 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
+            <Nav.Link className="fw-bold " as={Link} to="/contactme">
+                Contact Me
+              </Nav.Link>
               {user 
               ? 
               (
