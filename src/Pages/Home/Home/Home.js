@@ -29,6 +29,7 @@ const Home = () => {
     </Carousel>
 
       <Services></Services>
+      
     </div>
   );
 };

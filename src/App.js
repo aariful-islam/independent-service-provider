@@ -8,6 +8,7 @@ import LogIn from './Pages/LogIn/LogIn/LogIn';
 import Registration from './Pages/LogIn/Registration/Registration';
 import RequireAuth from './Pages/LogIn/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         <Route path='/registration' element={<Registration></Registration>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      
+      <Footer></Footer>
      
     </div>
   );
