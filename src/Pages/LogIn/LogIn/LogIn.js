@@ -9,12 +9,15 @@ import {
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import 'react-toastify/dist/ReactToastify.css';
 
 const LogIn = () => {
   const [email, setEmail] = useState(" ");
   const [password, setPassword] = useState(" ");
+  
   const navigate = useNavigate();
   const location = useLocation();
+  
   let from = location.state?.from?.pathname || "/";
   let errorElement;
   const [sendPasswordResetEmail, sending]= useSendPasswordResetEmail(auth, {sendEmailVerification: true});
@@ -23,7 +26,7 @@ const LogIn = () => {
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
-    console.log(e.target.value);
+    
   };
   const handlePassword = (e) => {
     setPassword(e.target.value);
