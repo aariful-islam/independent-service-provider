@@ -32,33 +32,6 @@ const Home = () => {
       
     </Carousel>
 
-
-
-
-
-
-
-
-
-
-      {/* <Container>
-        <div className="row mt-5">
-          <div className="col-6">
-            <h1>
-              <span className="m-5 me-3">Welcome to </span> <br />
-              <span className="text-primary">Workout with ARIF</span>{" "}
-            </h1>
-            <p>
-              Hi dear, I'm a professional gym trainer. I can be your personal gym trainer
-            </p>
-          </div>
-          <div className="col-6">
-            <img className="img-fluid" src={banner} alt="" />
-          </div>
-        </div>
-      </Container> */}
-      
-
       <Services></Services>
     </div>
   );
