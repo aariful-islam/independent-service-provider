@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+
 
 import "./Home.css";
 import banner1 from "../../../images/homeBanner.PNG";
-import banner2 from "../../../images/banner.jpg"
+
 import Services from "../Services/Services/Services";
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 
 const Home = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  
   return (
  
     <div>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel>
      
       <Carousel.Item>
         <img
